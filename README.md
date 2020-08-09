@@ -4,7 +4,7 @@
 
 ![https://raw.githubusercontent.com/AlessioGiacobbe/IsaacLeaderboard-Frontend/master/screenshot.png](https://raw.githubusercontent.com/AlessioGiacobbe/IsaacLeaderboard-Frontend/master/screenshot.png)
 
-A generic leaderboard Frontend developed with React.js. Hosted at [isaacleaderboard.herokuapp.com](http://isaacleaderboard.herokuapp.com).
+A generic leaderboard Frontend developed with React.js.
 ## Stuff used 
 * [Firebase](https://firebase.google.com/?hl=it)
 * [Framer Motion](https://www.framer.com/motion/)
