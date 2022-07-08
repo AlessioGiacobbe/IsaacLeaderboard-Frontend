@@ -1,7 +1,7 @@
 # Isaac leaderboard
 
 
-![https://raw.githubusercontent.com/AlessioGiacobbe/IsaacLeaderboard-Frontend/master/screenshot.png](https://raw.githubusercontent.com/AlessioGiacobbe/IsaacLeaderboard-Frontend/master/screenshot.png)
+![https://raw.githubusercontent.com/AlessioGiacobbe/IsaacLeaderboard-Frontend/master/public/img/screenshot.png](https://raw.githubusercontent.com/AlessioGiacobbe/IsaacLeaderboard-Frontend/master/public/img/screenshot.png)
 
 A generic leaderboard Frontend developed with React, serving data from [its backend](https://github.com/AlessioGiacobbe/IsaacLeaderboard-Backend)
 
