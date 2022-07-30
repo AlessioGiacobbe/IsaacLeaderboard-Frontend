@@ -22,7 +22,7 @@ function SingleMatch({ matchInfo, index, prev = null }) {
     const matchDate = moment.utc(matchInfo.data)
     const prevMatchDate = moment.utc(prev ? prev.data : 0)
 
-    const differentSeason = matchInfo.stagione != (prev ? prev.stagione : 0)
+    const differentSeason = matchInfo.stagione !== (prev ? prev.stagione : 0)
     const differentDate = !matchDate.isSame(prevMatchDate, 'day')
     const differentYear = !matchDate.isSame(prevMatchDate, 'year')
 
@@ -38,7 +38,7 @@ function SingleMatch({ matchInfo, index, prev = null }) {
                                 <p className="subtitle-no-space">
                                     {differentDate && matchDate.format("D MMMM")}
                                     {(differentDate && differentSeason) && ' \u2022 '}
-                                    {differentSeason && "Stagione" + (matchInfo.stagione + 1)}
+                                    {differentSeason && "Stagione " + (matchInfo.stagione + 1)}
                                 </p>
                             </Col>
                         }

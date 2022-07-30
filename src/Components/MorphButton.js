@@ -93,7 +93,7 @@ export default function MorphButton() {
     }
 
     function startUpload() {
-        if (matchTitle !== '' || !selectedWinner) {
+        if (matchTitle === '' || selectedWinner === 0) {
             M.toast({ html: 'riempi tutto' })
         } else if (!isSending) {
             setIsSending(true)
@@ -123,11 +123,11 @@ export default function MorphButton() {
                         <Row className="flex rownopadding new-button-form-container">
                             <Col s={6} m={12} l={12}>
                                 <motion.li key="imgform" className="height100" variants={animazioniclass.item}>
-                                    <div class="image-upload">
+                                    <div className="image-upload">
                                         <label for="file-input" className='image-container'>
                                             <img alt="Seleziona un'immagine" id="immagineform" className={`image ${isSending && "low-opacity"}`} src={selectedFile ? URL.createObjectURL(selectedFile) : "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E"} />
                                             {
-                                                !selectedFile && <div class="image-text">Seleziona un'immagine</div>
+                                                !selectedFile && <div className="image-text">Seleziona un'immagine</div>
                                             }
                                         </label>
                                         <input id="file-input" type="file" onChange={handleChangeFile} accept=".png,.jpg,.gif" />
