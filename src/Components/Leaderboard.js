@@ -51,7 +51,7 @@ export default function Leaderboard() {
     }, []) : null
 
     useEffect(() => {
-        fetch("https://isaacserver.herokuapp.com/classificatotale")
+        fetch("https://isaac-server.fly.dev/classificatotale")
             .then(res => res.json())
             .then(
                 (result) => {

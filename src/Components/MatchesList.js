@@ -82,7 +82,7 @@ export default function MatchesList() {
     const [matches, setMatches] = useState([])
 
     useEffect(() => {
-        fetch("https://isaacserver.herokuapp.com/punteggi")
+        fetch("https://isaac-server.fly.dev/punteggi")
             .then(res => res.json())
             .then(
                 (result) => {

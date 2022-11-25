@@ -84,7 +84,7 @@ export default function MorphButton() {
             })
         };
 
-        fetch('https://isaacserver.herokuapp.com/inserisci', requestOptions)
+        fetch('https://isaac-server.fly.dev/inserisci', requestOptions)
             .then(response => response.json())
             .then(data => {
                 setIsSending(false)
